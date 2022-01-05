@@ -5,14 +5,15 @@
     margin: 0;
     padding: 0;
     color: #1d1d1f;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
 }
 
-/* Header */
-header {
+/* navbar */
+nav {
     font-size: 1em;
     height: 6em;
     background-color: white;
@@ -21,9 +22,10 @@ header {
     width: 100%;
     transition: 0.5s;
     z-index: 999;
+    box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.2);
 }
 
-header > ul {
+nav > ul {
     width: 100%;
     height: 100%;
     display: flex;
@@ -33,22 +35,22 @@ header > ul {
     gap: 30px;
 }
 
-header > ul > li {
+nav > ul > li {
     display: flex;
     text-align: center;
     vertical-align: middle;
 }
 
-header > ul > li > a {
+nav > ul > li > a {
     text-decoration: none;
 }
 
-header > ul > li > a:hover {
+nav > ul > li > a:hover {
     font-weight: 600;
 }
 
 /* Reserve space for on hover font-weight change */
-header > ul > li > a::after {
+nav > ul > li > a::after {
     display: block;
     content: attr(title);
     font-weight: bold;
@@ -58,7 +60,7 @@ header > ul > li > a::after {
     visibility: hidden;
 }
 
-header > ul > li > h1 {
+nav > ul > li > h1 {
     margin-left: 1em;
     margin-right: 1em;
     vertical-align: middle;
@@ -125,7 +127,6 @@ header > ul > li > h1 {
 footer {
     background-color: #1d1d1f;
     margin-top: 6em;
-    height: 300px;
 }
 
 .footer-grid {
@@ -135,8 +136,8 @@ footer {
     grid-template-columns: 1fr 4fr 2fr 2fr 1fr;
     grid-template-areas:
         ". . . . ."
-        ". title address contact ."
-        ". socials . contact ."
+        ". title address reservation ."
+        ". socials . reservation ."
         ". . . . .";
 }
 
@@ -161,9 +162,9 @@ li {
     font-weight: 300;
 }
 
-.footer-contact {
+.footer-reservation {
     padding: 1em;
-    grid-area: contact;
+    grid-area: reservation;
 }
 
 .footer-item-title {
@@ -201,6 +202,70 @@ li {
 }
 
 .socials-icon:hover {
-    color:rgb(184, 184, 184);
+    color: rgb(184, 184, 184);
+    cursor: pointer;
+}
+
+/* Styling for reservation us page */
+.reservation-us-form {
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-top: 12em;
+}
+
+.grid-wrapper {
+    display: grid;
+    width: 100%;
+    height: 1200px;
+}
+
+.grid-information > p {
+    margin-top: 1rem;
+}
+
+.grid-form {
+    width: 100%;
+    margin-top: 6em;
+}
+
+.form-double > ul {
+    display: flex;
+    width: 100%;
+    gap: 4em;
+}
+
+.form-double > ul > li {
+    width: 100%;
+}
+
+.input {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.8em;
+    font-size: 12px;
+    outline: none;
+    border: 1px #2c2c2e solid;
+}
+
+.input:focus {
+    box-shadow: 0 0 1pt 1pt rgb(58, 58, 58, 0.1);
+}
+
+.input-label {
+    font-size: 12px;
+}
+
+.form-input-title {
+    margin-top: 2rem;
+    font-weight: 400;
+}
+
+.submit-button {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0.8em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    border: 0;
     cursor: pointer;
 }

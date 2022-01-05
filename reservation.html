@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+    <title>Hem - Crab House</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="./index.html" title="Home">Home</a></li>
+                <li><a href="./menu.html" title="Menu">Menu</a></li>
+                <li>
+                    <h1 class="header-title">Crab House</h1>
+                </li>
+                <li><a href="#" title="Reservation">Reservation</a></li>
+                <li><a href="#" title="Order Now">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reservation-us-form">
+        <form class="grid-form" onsubmit="alert('No')">
+            <div class="form-double">
+                <h3 class="form-input-title">Name *</h3>
+                <ul>
+                    <li>
+                        <input class="input" type="text" placeholder="John" name="" id="first-name" required /></br>
+                        <label class="input-label" for="first-name">First Name</label>
+                    </li>
+                    <li>
+                        <input class="input" type="text" placeholder="Doe" name="" id="last-name" required /></br>
+                        <label class="input-label" for="last-name">Last Name</label>
+                    </li>
+                </ul>
+            </div>
+            <h3 class="form-input-title">Phonenumber *</h3>
+            <input class="input" type="text" placeholder="070 174 06 05" name="" id="phonenumber" required /></br>
+            <h3 class="form-input-title">Email</h3>
+            <input class="input" type="text" placeholder="john.doe@example.com" name="" id="phonenumber" required /></br>
+            <div class="form-double">
+                <ul>
+                    <li>
+                        <h3 class="form-input-title">Date *</h3>
+                        <input class="input" type="date" name="" id="date" required /></br>
+                    </li>
+                    <li>
+                        <h3 class="form-input-title">Number of Guests *</h3>
+                        <input class="input" type="number" name="" id="last-name" required /></br>
+                    </li>
+                </ul>
+            </div>
+            <button class="submit-button" type="submit" id="last-name" required >Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-title">
+                <h1>Crab House</h1>
+            </div>
+            <div class="footer-reservation">
+                <h2 class="footer-item-title">Reservation us</h2>
+                <p class="footer-item-paragraph">
+                    Nisi quis officia qui eu non mollit incididunt nulla.
+                    Officia Lorem adipisicing deserunt consectetur officia
+                    qui eu irure consequat consectetur pariatur sunt.
+                </p>
+            </div>
+            <div class="footer-our-history">
+                <h2 class="footer-item-title">Our history</h2>
+                <p class="footer-item-paragraph">
+                    Cillum nostrud id exercitation do enim amet non veniam
+                    ut magna laboris fugiat exercitation anim. Fugiat
+                    incididunt qui nostrud qui. Dolor ullamco irure
+                    exercitation elit adipisicing sint.
+                </p>
+            </div>
+            <div class="footer-socials">
+                <ul class="socials-list">
+                    <li><i class="socials-icon fab fa-instagram"></i></li>
+                    <li><i class="socials-icon fab fa-facebook-f"></i></li>
+                    <li>
+                        <i class="socials-icon fab fa-snapchat-ghost"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./misc/index.js"></script>
+</body>
+
+</html>
