@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 
 * {
     margin: 0;
@@ -87,14 +87,17 @@ nav > ul > li > h1 {
 }
 
 .cover-photo-title {
-    font-family: 'Bungee Shade', cursive;
+    font-family: "Bungee Shade", cursive;
     position: absolute;
     font-size: 4em;
     text-align: center;
     color: #fff;
-    top: 20%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .cover-photo-subtitle {
@@ -102,9 +105,12 @@ nav > ul > li > h1 {
     font-size: 3em;
     text-align: center;
     color: #fff;
-    top: 28%;
+    top: 26%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Our restaurants section */
@@ -118,10 +124,15 @@ nav > ul > li > h1 {
 }
 
 .our-restaurants-title {
-    padding: 0.2em;
+    margin: 0.4em;
     text-align: center;
     font-size: 36px;
     font-weight: 400;
+}
+
+.our-restaurants-map {
+    width: 55%;
+    height: 450px;
 }
 
 .our-restaurants > .locations {
@@ -293,4 +304,53 @@ li {
     background-color: #c2c2c2;
     font-size: 18px;
     font-weight: 400;
+}
+
+/* Resize */
+@media only screen and (max-width: 1840px) {
+    .cover-photo-title {
+        font-size: 3em;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .cover-photo-subtitle {
+        font-size: 2em;
+        top: 26%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .cover-photo-title {
+        font-size: 2.5em;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .cover-photo-subtitle {
+        font-size: 1.8em;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .our-restaurants-map {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .locations {
+        flex-direction: column;
+    }
+
+    .our-restaurants > .locations {
+        gap: 2rem;
+    }
 }
