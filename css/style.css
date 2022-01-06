@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 
 * {
     margin: 0;
@@ -84,6 +84,27 @@ nav > ul > li > h1 {
     width: 100%;
     height: calc(100vh - 6em);
     object-fit: cover;
+}
+
+.cover-photo-title {
+    font-family: 'Bungee Shade', cursive;
+    position: absolute;
+    font-size: 4em;
+    text-align: center;
+    color: #fff;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cover-photo-subtitle {
+    position: absolute;
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Our restaurants section */
@@ -189,25 +210,25 @@ li {
     grid-area: address;
 }
 
-.socials-list {
+.footer-socials-list {
     display: flex;
     gap: 20px;
     list-style-type: none;
     justify-content: center;
 }
 
-.socials-icon {
+.footer-socials-icon {
     color: rgb(255, 255, 255);
     font-size: 1.6rem;
 }
 
-.socials-icon:hover {
+.footer-socials-icon:hover {
     color: rgb(184, 184, 184);
     cursor: pointer;
 }
 
 /* Styling for reservation us page */
-.reservation-us-form {
+.reservation-form {
     margin-left: 22%;
     margin-right: 22%;
     margin-top: 12em;
@@ -223,7 +244,7 @@ li {
     margin-top: 1rem;
 }
 
-.grid-form {
+.form-grid {
     width: 100%;
     margin-top: 6em;
 }
@@ -241,10 +262,11 @@ li {
 .input {
     margin-top: 1rem;
     width: 100%;
-    padding: 0.8em;
+    padding: 1rem;
     font-size: 12px;
     outline: none;
     border: 1px #2c2c2e solid;
+    font-family: inherit;
 }
 
 .input:focus {
@@ -261,11 +283,14 @@ li {
 }
 
 .submit-button {
+    display: block;
     margin-top: 2rem;
-    width: 100%;
-    padding: 0.8em;
-    padding-top: 1.2em;
-    padding-bottom: 1.2em;
+    width: 25%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border: 0;
     cursor: pointer;
+    background-color: #c2c2c2;
+    font-size: 18px;
+    font-weight: 400;
 }
