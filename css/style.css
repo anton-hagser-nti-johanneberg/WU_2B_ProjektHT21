@@ -32,7 +32,7 @@ nav > ul {
     list-style-type: none;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 nav > ul > li {
@@ -72,6 +72,11 @@ nav > ul > li > h1 {
 .navbar-small {
     height: 4em;
     transition: 0.5s;
+}
+
+.navbar-item {
+    text-align: center;
+    width: 6em;
 }
 
 /* Cover photo */
@@ -155,6 +160,197 @@ nav > ul > li > h1 {
     color: #585757;
 }
 
+/* Menu */
+.menu {
+    width: 100%;
+}
+
+.menu-wrapper {
+    width: 1060px;
+}
+
+.menu-liner {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.menu-liner:after {
+    content: "";
+    flex-grow: 1;
+    height: 3px;
+    background: #2c2c2e;
+    min-width: 20px;
+    margin: auto;
+}
+
+.menu-liner:after {
+    margin-left: 20px;
+}
+
+.menu-cards {
+    display: flex;
+    gap: 5rem;
+    list-style-type: none;
+}
+
+.menu-card {
+    height: 450px;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.menu-card:nth-of-type(1) {
+    background: url("../img/burger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-card:nth-of-type(2) {
+    background: url("../img/wine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-card:nth-of-type(3) {
+    background: url("../img/hen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-card-title {
+    color: #fff;
+    position: relative;
+    top: 82%;
+    text-align: center;
+    font-size: 36px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.menu-card-price {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    top: 78%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.menu-category {
+    margin-top: 4rem;
+}
+
+.menu-wide-separator {
+    margin-top: 8rem;
+}
+
+.menu {
+    padding-top: 12em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu > h1 {
+    color: #1d1d1f;
+}
+
+.menu-category-item {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "item-title item-price"
+        "item-desc  item-price";
+    padding-top: 1.5rem;
+}
+
+.item-title {
+    font-weight: 600;
+    grid-area: item-title;
+}
+
+.item-price {
+    grid-area: item-price;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-desc {
+    grid-area: item-desc;
+}
+
+/* Reservations */
+.reservation-form {
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-top: 12em;
+}
+
+.grid-wrapper {
+    display: grid;
+    width: 100%;
+    height: 1200px;
+}
+
+.grid-information > p {
+    margin-top: 1rem;
+}
+
+.form-grid {
+    width: 100%;
+    margin-top: 6em;
+}
+
+.form-double > ul {
+    display: flex;
+    width: 100%;
+    gap: 4em;
+    list-style-type: none;
+}
+
+.form-double > ul > li {
+    width: 100%;
+}
+
+.input {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    font-size: 12px;
+    outline: none;
+    border: 1px #2c2c2e solid;
+    font-family: inherit;
+}
+
+.input:focus {
+    box-shadow: 0 0 1pt 1pt rgb(58, 58, 58, 0.1);
+}
+
+.input-label {
+    font-size: 12px;
+}
+
+.form-input-title {
+    margin-top: 2rem;
+    font-weight: 400;
+}
+
+.submit-button {
+    display: block;
+    margin-top: 2rem;
+    width: 25%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 0;
+    cursor: pointer;
+    background-color: #c2c2c2;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 /* Footer */
 footer {
     background-color: #1d1d1f;
@@ -173,11 +369,7 @@ footer {
         ". . . . .";
 }
 
-h1 {
-    color: inherit;
-}
-
-li {
+.footer-socials-list > li {
     color: #fff;
 }
 
@@ -190,6 +382,7 @@ li {
 }
 
 .footer-title > h1 {
+    color: #fff;
     font-size: 48px;
     font-weight: 300;
 }
@@ -238,74 +431,6 @@ li {
     cursor: pointer;
 }
 
-/* Styling for reservation us page */
-.reservation-form {
-    margin-left: 22%;
-    margin-right: 22%;
-    margin-top: 12em;
-}
-
-.grid-wrapper {
-    display: grid;
-    width: 100%;
-    height: 1200px;
-}
-
-.grid-information > p {
-    margin-top: 1rem;
-}
-
-.form-grid {
-    width: 100%;
-    margin-top: 6em;
-}
-
-.form-double > ul {
-    display: flex;
-    width: 100%;
-    gap: 4em;
-}
-
-.form-double > ul > li {
-    width: 100%;
-}
-
-.input {
-    margin-top: 1rem;
-    width: 100%;
-    padding: 1rem;
-    font-size: 12px;
-    outline: none;
-    border: 1px #2c2c2e solid;
-    font-family: inherit;
-}
-
-.input:focus {
-    box-shadow: 0 0 1pt 1pt rgb(58, 58, 58, 0.1);
-}
-
-.input-label {
-    font-size: 12px;
-}
-
-.form-input-title {
-    margin-top: 2rem;
-    font-weight: 400;
-}
-
-.submit-button {
-    display: block;
-    margin-top: 2rem;
-    width: 25%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border: 0;
-    cursor: pointer;
-    background-color: #c2c2c2;
-    font-size: 18px;
-    font-weight: 400;
-}
-
 /* Resize */
 @media only screen and (max-width: 1840px) {
     .cover-photo-title {
@@ -314,7 +439,7 @@ li {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    
+
     .cover-photo-subtitle {
         font-size: 2em;
         top: 26%;
