@@ -4,11 +4,11 @@ if (document.getElementById("map")) {
         "pk.eyJ1Ijoic3RhcnRvbGVmdCIsImEiOiJjamtmcnhwdGIwYnR6M3NxbjR3cTBvdThjIn0.fihE9-g-sm0dgoMksATtUw";
     const map = new mapboxgl.Map({
         container: "map", // container ID
-        style: "mapbox://styles/mapbox/streets-v11", // style URL
-        center: [14.208328809133434, 57.65571605834185], // starting position
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [14.208328809133434, 57.65571605834185],
         pitch: 0,
         bearing: 0,
-        zoom: 4.65, // starting zoom
+        zoom: 4.65,
     });
 
     map.on("load", () => {
