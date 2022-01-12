@@ -60,13 +60,19 @@ nav > ul > li > a::after {
     visibility: hidden;
 }
 
-nav > ul > li > h1 {
-    margin-left: 1em;
-    margin-right: 1em;
-    vertical-align: middle;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: #1d1d1f;
+.header-logo-container {
+    width: 17.5rem;
+    height: 4.5rem;
+}
+
+.header-logo-container-small {
+    width: 17em;
+    height: 4em;
+}
+
+.header-logo {
+    height: 100%;
+    width: 100%;
 }
 
 .navbar-small {

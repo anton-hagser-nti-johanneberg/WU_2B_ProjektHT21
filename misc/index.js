@@ -78,10 +78,15 @@ if (document.getElementById("map")) {
 
 // Handle sticky navbar
 var navbar = document.getElementById("navbar");
+var navbarLogo = document.getElementById("navbar-logo");
 window.onscroll = function () {
     if (window.pageYOffset >= 40) {
         navbar.classList.add("navbar-small");
+        navbarLogo.classList.remove("header-logo-container");
+        navbarLogo.classList.add("header-logo-container-small");
     } else {
         navbar.classList.remove("navbar-small");
+        navbarLogo.classList.add("header-logo-container");
+        navbarLogo.classList.remove("header-logo-container-small");
     }
 };
