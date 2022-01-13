@@ -51,22 +51,22 @@ if (document.getElementById("map")) {
         );
 
         const gothenburg = new mapboxgl.Marker({
-            color: "red",
-            draggable: true,
+            color: "#1d1d1f",
+            draggable: false,
         })
             .setLngLat([11.973418561594144, 57.70110534205301])
             .addTo(map);
 
         const halmstad = new mapboxgl.Marker({
-            color: "red",
-            draggable: true,
+            color: "#1d1d1f",
+            draggable: false,
         })
             .setLngLat([12.858726218404627, 56.675243994602994])
             .addTo(map);
 
         const stockholm = new mapboxgl.Marker({
-            color: "red",
-            draggable: true,
+            color: "#1d1d1f",
+            draggable: false,
         })
             .setLngLat([18.085704896787774, 59.33476825913999])
             .addTo(map);
