@@ -1,5 +1,4 @@
 if (document.getElementById("map")) {
-
     mapboxgl.accessToken =
         "pk.eyJ1Ijoic3RhcnRvbGVmdCIsImEiOiJjamtmcnhwdGIwYnR6M3NxbjR3cTBvdThjIn0.fihE9-g-sm0dgoMksATtUw";
     const map = new mapboxgl.Map({
@@ -17,7 +16,8 @@ if (document.getElementById("map")) {
             (layer) => layer.type === "symbol" && layer.layout["text-field"]
         ).id;
 
-        map.addLayer({
+        map.addLayer(
+            {
                 id: "add-3d-buildings",
                 source: "composite",
                 "source-layer": "building",
@@ -51,24 +51,24 @@ if (document.getElementById("map")) {
         );
 
         const gothenburg = new mapboxgl.Marker({
-                color: "red",
-                draggable: true,
-            })
-            .setLngLat([11.9711353, 57.7011121])
+            color: "red",
+            draggable: true,
+        })
+            .setLngLat([11.973418561594144, 57.70110534205301])
             .addTo(map);
 
         const halmstad = new mapboxgl.Marker({
-                color: "red",
-                draggable: true,
-            })
-            .setLngLat([12.8567559, 56.6752514])
+            color: "red",
+            draggable: true,
+        })
+            .setLngLat([12.858726218404627, 56.675243994602994])
             .addTo(map);
 
         const stockholm = new mapboxgl.Marker({
-                color: "red",
-                draggable: true,
-            })
-            .setLngLat([18.083367, 59.3347249])
+            color: "red",
+            draggable: true,
+        })
+            .setLngLat([18.085704896787774, 59.33476825913999])
             .addTo(map);
     });
 

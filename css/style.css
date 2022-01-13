@@ -109,6 +109,7 @@ nav > ul > li > a::after {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    user-select: none;
 }
 
 .cover-photo-subtitle {
@@ -122,6 +123,7 @@ nav > ul > li > a::after {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    user-select: none;
 }
 
 /* Our restaurants section */
